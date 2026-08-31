@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arcade Game — Pixel Party</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="theme.css?v=3">
+<script src="shared.js?v=3">
+</script>
+</head>
+<body class="game-page mini-page">
+<nav class="topbar game-nav">
+<a class="brand" href="index.html">
+<span>PIXEL</span> PARTY</a>
+<div class="nav-links">
+<a href="index.html">GAMES</a>
+<a href="shop.html">SHOP</a>
+</div>
+<div class="player-pill">
+<b data-player-icon>⚡</b>
+<span data-points>0</span> PTS</div>
+</nav>
+<main class="game-shell">
+<header class="game-head">
+<div>
+<a class="back" href="index.html">← ALL GAMES</a>
+<h1 class="game-title" id="title">GAME</h1>
+</div>
+<div class="scoreboard">
+<div>
+<small>SCORE</small>
+<strong id="mini-score">000</strong>
+</div>
+<div>
+<small>BEST</small>
+<strong id="mini-best">000</strong>
+</div>
+</div>
+</header>
+<div class="mini-stage" id="stage">
+<canvas id="mini-canvas" width="760" height="520">
+</canvas>
+<div id="dom-game">
+</div>
+<div class="overlay" id="mini-overlay">
+<h2 id="overlay-title">READY?</h2>
+<p id="overlay-copy">Press start to play.</p>
+<button class="game-btn" id="mini-start">START GAME</button>
+</div>
+</div>
+<p class="mini-help" id="help">
+</p>
+</main>
+<script src="mini-games.js">
+</script>
+</body>
+</html>

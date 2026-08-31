@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tetris — Pixel Party</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="theme.css?v=3"><script src="shared.js?v=3"></script>
+</head>
+<body class="game-page" style="--accent:#8d7aff">
+<nav class="topbar game-nav">
+<a class="brand" href="index.html">
+<span>PIXEL</span> PARTY</a>
+<div class="player-pill"><b data-player-icon>⚡</b><span data-points>0</span> PTS</div>
+</nav>
+<main class="game-shell">
+<header class="game-head">
+<div>
+<a class="back" href="index.html">← ALL GAMES</a>
+<h1 class="game-title">
+<span>Tetris</span>
+</h1>
+</div>
+<div class="scoreboard">
+<div>
+<small>LINES</small>
+<strong id="lines">00</strong>
+</div>
+<div>
+<small>SCORE</small>
+<strong id="score">0000</strong>
+</div>
+</div>
+</header>
+<div class="game-layout">
+<div>
+<div class="canvas-wrap">
+<canvas id="game" width="360" height="600">
+</canvas>
+<div class="overlay" id="overlay">
+<h2>TETRIS</h2>
+<p>Build complete lines and keep the stack away from the top.</p>
+<button class="game-btn" id="start">START GAME</button>
+</div>
+</div>
+<div class="touch-controls">
+<button class="up" data-act="rotate">↻</button>
+<button class="left" data-act="left">←</button>
+<button class="down" data-act="down">↓</button>
+<button class="right" data-act="right">→</button>
+</div>
+</div>
+<aside class="side-panel">
+<h3>HOW TO PLAY</h3>
+<div class="controls-list">
+<div class="control-row">
+<span>Move</span>
+<b class="key">← →</b>
+</div>
+<div class="control-row">
+<span>Rotate</span>
+<b class="key">↑</b>
+</div>
+<div class="control-row">
+<span>Soft drop</span>
+<b class="key">↓</b>
+</div>
+<div class="control-row">
+<span>Hard drop</span>
+<b class="key">SPACE</b>
+</div>
+</div>
+<p class="tip">Clear several lines at once for a bigger score. The game speeds up as you progress.</p>
+<button class="game-btn" id="restart">RESTART</button>
+</aside>
+</div>
+</main>
+<script src="tetris.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2048 — Pixel Party</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="theme.css?v=3">
+<script src="shared.js?v=3"></script>
+</head>
+<body class="game-page game-2048" style="--accent:#b6f21f">
+<nav class="topbar game-nav">
+<a class="brand" href="index.html">
+<span>PIXEL</span> PARTY</a>
+<div class="player-pill"><b data-player-icon>⚡</b><span data-points>0</span> PTS</div>
+</nav>
+<main class="game-shell">
+<header class="game-head">
+<div>
+<a class="back" href="index.html">← ALL GAMES</a>
+<h1 class="game-title">
+<span>2048</span>
+</h1>
+</div>
+<div class="scoreboard">
+<div>
+<small>SCORE</small>
+<strong id="score">0000</strong>
+</div>
+<div>
+<small>BEST</small>
+<strong id="best">0000</strong>
+</div>
+</div>
+</header>
+<div class="game-layout">
+<div>
+<div class="canvas-wrap board-wrap">
+<div id="board" class="board-2048" aria-label="2048 game board">
+</div>
+<div class="overlay" id="overlay">
+<h2>2048</h2>
+<p>Join matching numbers and build a 2048 tile.</p>
+<button class="game-btn" id="start">START GAME</button>
+</div>
+</div>
+<div class="touch-controls">
+<button class="up" data-dir="up">↑</button>
+<button class="left" data-dir="left">←</button>
+<button class="down" data-dir="down">↓</button>
+<button class="right" data-dir="right">→</button>
+</div>
+</div>
+<aside class="side-panel">
+<h3>HOW TO PLAY</h3>
+<div class="controls-list">
+<div class="control-row">
+<span>Slide tiles</span>
+<b class="key">↑ ↓ ← →</b>
+</div>
+<div class="control-row">
+<span>Also works</span>
+<b class="key">WASD</b>
+</div>
+</div>
+<p class="tip">Tiles with the same number merge when they touch. Plan ahead—the board fills quickly.</p>
+<button class="game-btn" id="restart">NEW GAME</button>
+</aside>
+</div>
+</main>
+<script src="2048.js">
+</script>
+</body>
+</html>
